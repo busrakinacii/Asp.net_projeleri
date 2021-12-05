@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="arkaplan.jpg">
+    <form id="form1" runat="server">
+    <div>
+       <table width="621" height="396" border="1" align="center">
+  <tr>
+    <td colspan="5" align="left">
+        <a href="Default.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="~/banner.jpg" /></a>
+      </td>
+  </tr>
+  <tr>
+    <td height="30" align="center">
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/anasayfa.aspx">Anasayfa</asp:HyperLink>
+      </td>
+    <td align="center">
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/online.aspx">Onlie Alışveriş</asp:HyperLink>
+      </td>
+    <td>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/sikayet.aspx">Dilek ve</asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/sikayet.aspx">Şikayetleriniz</asp:HyperLink>
+      </td>
+    <td>
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/hak.aspx">Hakımızda </asp:HyperLink>
+      </td>
+    <td>
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/iletisim.aspx">İletişim</asp:HyperLink>
+      </td>
+  </tr>
+  <tr>
+    <td height="227" colspan="5" align="left">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+      </td>
+  </tr>
+</table>
+    </div>
+    </form>
+</body>
+</html>

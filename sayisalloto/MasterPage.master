@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 200px;
+        }
+        </style>
+</head>
+<body background="arka.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table width="918" height="247" border="1" background="tabloarka.jpg">
+  <tr>
+    <td colspan="6"><img src="banner1.jpg" width="999" height="129" /></td>
+  </tr>
+  <tr>
+    <td colspan="4" background="arka.jpg" style="color: #FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Şansınız Bol Olsun, Teknik 11 Sınıfı Loto Oynamanızı Tavsiye Ederiz.</td>
+    <td width="144">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink1" runat="server" BorderStyle="None" 
+            ForeColor="#3333CC" NavigateUrl="~/hakkimizda.aspx">Hakkımızda</asp:HyperLink>
+      </td>
+    <td width="136">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#3333FF" 
+            NavigateUrl="~/iletişim.aspx">İletişim</asp:HyperLink>
+      </td>
+  </tr>
+  <tr>
+    <td class="style1"><img src="mp.jpg" 
+            width="212" height="284" dir="ltr" /></td>
+    <td colspan="5" rowspan="2">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p align="left" dir="ltr">
+&nbsp;</p>
+        </asp:ContentPlaceHolder>
+      </td>
+  </tr>
+  <tr>
+    <td class="style1">
+        <asp:ImageButton ID="ImageButton3" runat="server" Height="52px" 
+            ImageUrl="~/gencloto.jpg" Width="213px" />
+      </td>
+  </tr>
+  <tr>
+    <td class="style1">
+        <asp:ImageButton ID="ImageButton2" runat="server" Height="55px" 
+            ImageUrl="~/milli-piyango.jpg" Width="214px" 
+            PostBackUrl="~/Default.aspx" />
+      </td>
+    <td width="183">
+        <asp:ImageButton ID="ImageButton4" runat="server" Height="56px" 
+            ImageUrl="~/sl.jpg" Width="178px" PostBackUrl="~/sayisalloto.aspx" />
+      </td>
+    <td width="145">
+        <asp:ImageButton ID="ImageButton5" runat="server" Height="53px" 
+            ImageUrl="~/st.jpg" Width="147px" PostBackUrl="~/sanstopu.aspx" />
+      </td>
+    <td>
+        <asp:ImageButton ID="ImageButton6" runat="server" Height="55px" 
+            ImageUrl="~/on.jpg" Width="137px" PostBackUrl="~/onnumara.aspx" />
+      </td>
+    <td>
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="56px" 
+            ImageUrl="~/superloto.jpg" Width="147px" PostBackUrl="~/superloto.aspx" />
+      </td>
+    <td>
+        <asp:ImageButton ID="ImageButton7" runat="server" Height="53px" 
+            ImageUrl="~/gencloto.jpg" Width="140px" PostBackUrl="~/gençloto.aspx" />
+      </td>
+  </tr>
+</table>
+    </div>
+    </form>
+</body>
+</html>
